@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #38184C;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: white;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family:  "Protest Strike", sans-serif;
+}
+
+li:hover {
+    color: yellow;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+.game-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family:  "Protest Strike", sans-serif;
+}
+
+.card:hover {
+   transform:scale(1.02); 
+}
+
+.banner-1 {
+    background-image: url("https://assets.reedpopcdn.com/18133f6d16954-screenshotUrl~2.jpg/BROK/resize/690%3E/format/jpg/quality/75/18133f6d16954-screenshotUrl~2.jpg");
+}
+
+.banner-2 {
+    background-image: url("https://selectgame.gamehall.com.br/wp-content/uploads/2022/06/Fortnite-Capitulo-3-Temporada-3-Estalido-01.webp");
+}
+
+.banner-3 {
+    background-image: url("https://assets.reedpopcdn.com/18134030de295-screenshotUrl~2.jpg/BROK/resize/690%3E/format/jpg/quality/75/18134030de295-screenshotUrl~2.jpg");
+}
+
+.banner-4 {
+    background-image: url("https://assets.reedpopcdn.com/181341a59dc89-screenshotUrl~2.jpg/BROK/resize/690%3E/format/jpg/quality/75/181341a59dc89-screenshotUrl~2.jpg");
+}
+
+.banner-5 {
+    background-image: url("https://assets.reedpopcdn.com/1813421be4e26-screenshotUrl~2.jpg/BROK/resize/690%3E/format/jpg/quality/75/1813421be4e26-screenshotUrl~2.jpg");
+}
+
+.banner-6 {
+    background-image: url("https://assets.reedpopcdn.com/181343f302768-screenshotUrl~2.jpg/BROK/resize/690%3E/format/jpg/quality/75/181343f302768-screenshotUrl~2.jpg");
+}
+
+.banner-7 {
+    background-image: url("https://selectgame.gamehall.com.br/wp-content/uploads/2022/06/Fortnite-Capitulo-3-Temporada-3-Darth-Vader-01.webp");
+}
+
+.banner-8 {
+    background-image: url("https://e1.pxfuel.com/desktop-wallpaper/700/64/desktop-wallpaper-indiana-jones-fortnite.jpg");
+}
+
+.banner-9 {
+    background-image: url("https://p2.trrsf.com/image/fget/cf/1200/900/middle/images.terra.com/2022/06/05/fortnite-chapter-3-season-3-battle-pass-1900x600-b55c4445ca39-s1dvseuzk2n6.jpg");
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color:#fff;
+    font-family:  "Protest Strike", sans-serif;
+}
+ 
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px) {
+    .footer-navigation {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+    
+    #banner {
+        background-position: 40%;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+}
